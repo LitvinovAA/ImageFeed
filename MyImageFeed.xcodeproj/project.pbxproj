@@ -12,9 +12,9 @@
 		8A83E69F29AD90D80012847D /* ImagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83E69E29AD90D80012847D /* ImagesListViewController.swift */; };
 		8A83E6A229AD90D80012847D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A83E6A029AD90D80012847D /* Main.storyboard */; };
 		8A83E6A429AD90DA0012847D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A83E6A329AD90DA0012847D /* Assets.xcassets */; };
-		8A83E6A729AD90DA0012847D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A83E6A529AD90DA0012847D /* LaunchScreen.storyboard */; };
 		8AA8D9EF29BA2118007FC508 /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA8D9EE29BA2118007FC508 /* ImagesListCell.swift */; };
 		8AA8D9F229BC456E007FC508 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA8D9F129BC456E007FC508 /* GradientView.swift */; };
+		8AA8D9F529BD9624007FC508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA8D9F329BD9624007FC508 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +24,10 @@
 		8A83E69E29AD90D80012847D /* ImagesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewController.swift; sourceTree = "<group>"; };
 		8A83E6A129AD90D80012847D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A83E6A329AD90DA0012847D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8A83E6A629AD90DA0012847D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A83E6A829AD90DA0012847D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AA8D9EE29BA2118007FC508 /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
 		8AA8D9F129BC456E007FC508 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		8AA8D9F429BD9624007FC508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MyImageFeed/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +44,7 @@
 		8A83E68E29AD90D80012847D = {
 			isa = PBXGroup;
 			children = (
+				8AA8D9F329BD9624007FC508 /* LaunchScreen.storyboard */,
 				8A83E69929AD90D80012847D /* MyImageFeed */,
 				8A83E69829AD90D80012847D /* Products */,
 			);
@@ -65,7 +66,6 @@
 				8AA8D9F029BA214D007FC508 /* ImagesList */,
 				8A83E6A029AD90D80012847D /* Main.storyboard */,
 				8A83E6A329AD90DA0012847D /* Assets.xcassets */,
-				8A83E6A529AD90DA0012847D /* LaunchScreen.storyboard */,
 				8A83E6A829AD90DA0012847D /* Info.plist */,
 			);
 			path = MyImageFeed;
@@ -139,7 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A83E6A729AD90DA0012847D /* LaunchScreen.storyboard in Resources */,
+				8AA8D9F529BD9624007FC508 /* LaunchScreen.storyboard in Resources */,
 				8A83E6A429AD90DA0012847D /* Assets.xcassets in Resources */,
 				8A83E6A229AD90D80012847D /* Main.storyboard in Resources */,
 			);
@@ -171,14 +171,13 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		8A83E6A529AD90DA0012847D /* LaunchScreen.storyboard */ = {
+		8AA8D9F329BD9624007FC508 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8A83E6A629AD90DA0012847D /* Base */,
+				8AA8D9F429BD9624007FC508 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = "/Users/alexey/Desktop/Desktop - Alexey’s MacBook Pro/Developer/MyImageFeed/MyImageFeed";
-			sourceTree = "<absolute>";
+			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
@@ -307,11 +306,12 @@
 				DEVELOPMENT_TEAM = 6DZX8575LN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyImageFeed/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -320,9 +320,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.LitvinovAA.MyImageFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -336,11 +339,12 @@
 				DEVELOPMENT_TEAM = 6DZX8575LN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyImageFeed/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -349,9 +353,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.LitvinovAA.MyImageFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

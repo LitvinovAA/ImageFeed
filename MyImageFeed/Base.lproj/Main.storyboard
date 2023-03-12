@@ -36,22 +36,27 @@
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="02 марта 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIR-qv-ndi" userLabel="Date Label" customClass="GradientView" customModule="MyImageFeed" customModuleProvider="target">
-                                                    <rect key="frame" x="36" y="195" width="93" height="18"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                                            <color key="value" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                                            <color key="value" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7j-Wd-Kzb" userLabel="Like Button">
-                                                    <rect key="frame" x="181" y="91" width="42" height="49"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dfh-YN-Ata">
+                                                    <rect key="frame" x="28" y="189.33333333333334" width="374" height="15.666666666666657"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02 марта 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIR-qv-ndi" userLabel="Date Label" customClass="GradientView" customModule="MyImageFeed" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="15.666666666666666"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                                    <color key="value" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                                    <color key="value" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7j-Wd-Kzb" userLabel="Like Button">
+                                                    <rect key="frame" x="364" y="15" width="42" height="42"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="like_button_on"/>
@@ -59,12 +64,12 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="9Yf-n1-Faz" firstAttribute="bottom" secondItem="aIR-qv-ndi" secondAttribute="bottom" constant="8" id="5rk-cX-CKY"/>
-                                                <constraint firstItem="F7j-Wd-Kzb" firstAttribute="top" secondItem="9Yf-n1-Faz" secondAttribute="top" id="LlE-xv-VBg"/>
+                                                <constraint firstItem="dfh-YN-Ata" firstAttribute="leading" secondItem="aBr-H9-qvG" secondAttribute="leadingMargin" constant="8" id="7mg-xn-GnH"/>
                                                 <constraint firstItem="9Yf-n1-Faz" firstAttribute="top" secondItem="aBr-H9-qvG" secondAttribute="top" constant="4" id="RbW-gZ-hkF"/>
-                                                <constraint firstItem="9Yf-n1-Faz" firstAttribute="trailing" secondItem="F7j-Wd-Kzb" secondAttribute="trailing" id="VTA-ms-p8g"/>
-                                                <constraint firstItem="aIR-qv-ndi" firstAttribute="leading" secondItem="9Yf-n1-Faz" secondAttribute="leading" constant="8" id="ehH-14-HYc"/>
-                                                <constraint firstItem="9Yf-n1-Faz" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aIR-qv-ndi" secondAttribute="trailing" constant="8" id="ez2-Bc-neU"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="dfh-YN-Ata" secondAttribute="trailing" constant="8" id="Tq4-W4-e37"/>
+                                                <constraint firstItem="F7j-Wd-Kzb" firstAttribute="top" secondItem="aBr-H9-qvG" secondAttribute="topMargin" constant="4" id="WgE-Oe-go4"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="dfh-YN-Ata" secondAttribute="bottom" constant="8" id="eNO-Fe-vFq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="F7j-Wd-Kzb" secondAttribute="trailing" constant="4" id="fAy-An-vrc"/>
                                                 <constraint firstAttribute="trailing" secondItem="9Yf-n1-Faz" secondAttribute="trailing" constant="16" id="gI4-rx-9wj"/>
                                                 <constraint firstAttribute="bottom" secondItem="9Yf-n1-Faz" secondAttribute="bottom" constant="4" id="uxq-BW-p3k"/>
                                                 <constraint firstItem="9Yf-n1-Faz" firstAttribute="leading" secondItem="aBr-H9-qvG" secondAttribute="leading" constant="16" id="wf5-QY-lKM"/>
@@ -91,6 +96,8 @@
                             <constraint firstAttribute="trailing" secondItem="qOU-Xe-RPu" secondAttribute="trailing" id="6rh-hl-q1g"/>
                             <constraint firstAttribute="top" secondItem="qOU-Xe-RPu" secondAttribute="top" id="dD3-vo-qAQ"/>
                             <constraint firstItem="qOU-Xe-RPu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gNb-7n-fgV"/>
+                            <constraint firstItem="qOU-Xe-RPu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rjz-hn-Umo"/>
+                            <constraint firstAttribute="trailing" secondItem="qOU-Xe-RPu" secondAttribute="trailing" id="tXU-zh-Q02"/>
                         </constraints>
                     </view>
                     <connections>

@@ -5,10 +5,9 @@
 //  Created by Alexey on 01.03.2023.
 //
 
-import Foundation
 import UIKit
 
-class GradientView:UILabel{
+final class GradientView:UILabel{
     
     @IBInspectable private var startColor: UIColor? {
         didSet {
